@@ -1,0 +1,81 @@
+TP : Générateur et Lecteur de QR Code en Python
+📌 Objectif : Développer une application qui permet de générer et lire des QR codes à partir d’une interface graphique.
+
+Étape 1 : Préparation de l’environnement
+📌 Objectif : Installer et configurer les bibliothèques nécessaires.
+
+1. Installer les bibliothèques
+Tu devras utiliser certaines bibliothèques Python pour générer et lire des QR codes :
+
+qrcode : Pour générer des QR codes.
+
+PIL (Pillow) : Pour manipuler et afficher des images.
+
+opencv-python : Pour scanner les QR codes.
+
+tkinter : Pour créer une interface graphique simple.
+
+💡 Action à faire :
+✔ Ouvre un terminal et exécute la commande suivante pour installer ces bibliothèques :
+
+bash
+Copier
+Modifier
+pip install qrcode[pil] opencv-python tkinter pillow
+✔ Vérifie que les modules s’installent correctement en important qrcode et cv2 dans un script test.
+
+Étape 2 : Générer un QR Code
+📌 Objectif : Créer une fonction qui prend un texte ou une URL en entrée et génère un QR code.
+
+💡 Actions à faire :
+✔ Crée un script Python pour générer un QR code.
+✔ Définis une fonction qui prend un texte en entrée.
+✔ Utilise la bibliothèque qrcode pour créer un QR code à partir de ce texte.
+✔ Sauvegarde l’image générée sous un nom spécifique (mon_qr.png).
+✔ Affiche l’image du QR code une fois créée.
+
+💡 À tester :
+🔹 Essaie de générer un QR code pour une URL, puis un pour un texte simple.
+🔹 Ouvre l’image générée et scanne-la avec ton téléphone pour vérifier si elle fonctionne.
+
+Étape 3 : Scanner un QR Code
+📌 Objectif : Détecter et extraire le contenu d’un QR code à partir d’une image.
+
+💡 Actions à faire :
+✔ Crée une nouvelle fonction qui prend une image de QR code en entrée.
+✔ Charge l’image avec opencv-python.
+✔ Détecte et décode le QR code avec OpenCV.
+✔ Affiche le contenu extrait à l’écran.
+
+💡 À tester :
+🔹 Télécharge un QR code existant sur Internet et essaie de le lire avec ton programme.
+🔹 Teste avec le QR code généré dans l’étape 2.
+
+Étape 4 : Créer une Interface Graphique avec Tkinter
+📌 Objectif : Permettre à l’utilisateur de générer et scanner des QR codes facilement.
+
+💡 Actions à faire :
+✔ Crée une fenêtre Tkinter avec un titre et une taille adaptée.
+✔ Ajoute un champ de saisie (Entry) pour entrer le texte ou l’URL.
+✔ Ajoute un bouton "Générer QR Code" qui exécute la fonction de génération.
+✔ Affiche l’image du QR code après génération.
+✔ Ajoute un bouton "Scanner QR Code" qui permet de sélectionner une image et d’extraire son contenu.
+✔ Affiche le résultat du scan dans une boîte de dialogue (messagebox).
+
+💡 À tester :
+🔹 Génère un QR code directement depuis l’interface.
+🔹 Sélectionne une image contenant un QR code et vérifie qu’elle est bien scannée.
+
+Étape 5 : Tester et Améliorer l’Application
+📌 Objectif : S’assurer que l’application fonctionne bien et ajouter des options supplémentaires.
+
+💡 Tests à faire :
+✔ Vérifie que toutes les fonctionnalités fonctionnent correctement (génération et lecture).
+✔ Vérifie que l’application ne plante pas en cas d’erreur (par exemple, si on scanne une image sans QR code).
+
+🚀 Améliorations possibles :
+🔹 Ajouter un logo au QR code (par exemple, une icône au centre).
+🔹 Permettre à l’utilisateur de choisir un nom pour enregistrer le QR code.
+🔹 Scanner un QR code en direct via la webcam au lieu d’une image.
+
+📌 Bravo ! Tu viens de créer une application complète pour générer et lire des QR codes
